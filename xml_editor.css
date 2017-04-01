@@ -1,0 +1,60 @@
+/* xml editor css */
+body{padding: 10px 50px; background-color: black; color: grey;}
+body,input,button{font-family: Consolas, monaco, monospace;}
+div{line-height: 20px;}
+
+input[type="text"]{border-width: 0px; border:none; outline: none; height: 20px; padding: 10px; background-color: black; color: white; font-family: Consolas, monaco, monospace;}
+input[type="text"]:focus{color: white; background-color: transparent; border-width:0px; border:none; outline: none;}
+     .active{display: inline-block;}
+     input.active{border: none; outline: 0; padding: 0; padding-top: 0; font-size: 100%;}
+     .inactive{display: none;}
+     button.active{color: white;}
+     button.inactive{display: inline-block; color: black;}
+
+input[type="radio"]{background-color: grey;}
+label{margin: 0 7px 0 3px;}
+button{background-color: grey;}
+button:hover,a:hover{color: white;}
+button.ui-dialog-titlebar-close{position: absolute; top: 23px; right: 3px; z-index: 999;}
+a{color: grey;}
+a:visited{color: grey;}
+
+
+/* Source: placeholder styles from David Walsh at https://davidwalsh.name/html5-placeholder-css */
+::-webkit-input-placeholder { color: grey; }
+::-moz-placeholder { color: grey; } /* firefox 19+ */
+:-ms-input-placeholder { color: grey; } /* ie */
+input:-moz-placeholder { color: grey; }
+
+.corner_info{position: absolute; top: 0px; font-size: 80%;}
+     .right_corner{right: 80px; }
+     .left_corner{left: 20px; }
+.filter_button{width: 100px; margin: 0 0 0 20px; color: white}
+.form_container{position: relative; width: 70%; border: 1px solid lightgrey; margin-top: 7px; padding: 0 10px 10px 10px;}
+.level > div{margin-top: 3px;}
+.level > div{margin-left: 25px;}
+.fieldlabel{font-weight: bold; color: grey; margin: 0 10px;}
+.highlighted_searchstring{background-color: blue;}
+.level_container{padding: 10px;}
+.delete,.add,.ui-dialog-titlebar-close{height: 20px; width: 20px; border-radius: 50%; padding: 0 5px; vertical-align: middle;}
+.add{}
+.is_editable span{height: 20px;}
+.edit_me{float: left; margin-right: 10px;}
+     .edit_me:hover{color: white;}
+.url_link{display: block;}
+
+
+#header_container{position: relative;}
+#properties{display: inline-block; margin: 0 10px;}
+#controls_container{text-align: right;}
+#new_property_name{width: 150px; height: 20px; line-height: 20px; background-color: transparent; color: white;}
+#filter_buttons_container{width: 70%; margin: 10px 0; text-align: right;}
+#search_bar{width: 70%; border: 1px solid lightgrey;}
+#search_results{padding: 7px; outline: 1px solid lightgrey; height: 400px; overflow-y: scroll; overflow-x: hidden;}
+#urls_list{border: 1px solid lightgrey; display: block; float: right; width: 25%; height: 500px; padding: 7px; overflow-y: scroll; overflow-x: hidden; font-size: 80%;}
+#dialog{display: none; position: relative; top: 50%; padding: 20px; background-color: black; border: 1px solid grey;}
+#xml_input{height: 90%; width: 90%; position: absolute; margin: 0 auto; vertical-align: middle; background-color: grey;}
+
+input{font-size: 100%;}
+.fieldval.active:hover{color: white;}
+input.active:focus{background-color: grey; color: white; padding: 0 7px;}

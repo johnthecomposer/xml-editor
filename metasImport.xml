@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><mappings xmlns:jcxmleditor="http://www.johnthecomposer.com.com/xml/meta">
+     <mapping>
+          <meta name="url" content="/" />
+          <meta name="title" content="root" />
+          <meta name="description" content="XML Editor, UI for editing XML Metas file" />
+          <meta name="robots" content="index,follow" />
+     </mapping>
+     <mapping>
+          <meta name="url" content="/aaa" />
+          <meta name="title" content="aaa title" />
+          <meta name="description" content="aaa description" />
+          <meta name="robots" content="index,follow" />
+     </mapping>
+</mappings>

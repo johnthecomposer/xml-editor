@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+     <head>
+          <meta charset="UTF-8">
+          <title>XML Editor</title>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+          <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+          <!-- <script src="/jc/js/events.js"></script> -->
+          <script src="/xml_editor/xml_editor.js"></script>
+          <script src="/jc/js/universal.js"></script>
+          <!-- <link rel="stylesheet" type="text/css" href="/jc/css/form.css"> -->
+          <link rel="stylesheet" type="text/css" href="/xml_editor/xml_editor.css">
+     </head>
+     <body>
+          <div id="header_container">
+               <h1>XML Editor</h1>
+               <!--<form ref='uploadForm' id='uploadForm' action='/xml_editor' method='post' encType="multipart/form-data">
+                    <input type="file" name="sampleFile" id="sampleFile" />
+                    <input type='submit' value='Upload!' />
+               </form>
+               <form action="/xml_editor">
+                    <input name="foo" type="file" />
+                    <input type='submit' value='submit' />
+               </form>
+-->
+               <!-- <h2><span class="important">!important!</span> Set file permission to writeable before uploading.</h2> -->
+               <form name="dialog" id="dialog" action="#">
+                    <textarea id="xml_input" placeholder="[ xml string]"></textarea>
+               </form>
+               <div id="filter_buttons_container">search in:</div>
+               <input type="text" name="search_bar" title="search" id="search_bar" class="auto_search" placeholder="[ search ]">
+               <h3 class="corner_info right_corner">records: <span class="little_counter records"></span></h3>
+               <div id="urls_list"></div>
+          </div>
+          <div id="content_container">
+               <div class="form_container" id="user_form_container">
+                    <form class="user_form" name="edit_xml_form" action="#">
+                         <!-- <input type="submit" value="save" class="save"> -->
+                         <div id="controls_container">
+                              <h3 class="corner_info left_corner">results count: <span class="little_counter results"></span></h3>
+                              <input type="text" id="replace">
+                              <button type="button" id="save_to_file" value="save">save to file</button>
+                              <button type="button" id="import_xml_string" class="dialog" value="import_xml_string">import xml string</button>
+                              <button type="button" id="export_xml_string" class="dialog" value="export_xml_string">export xml string</button>
+                              <button type="button" class="new record">+ new record</button>
+                         </div>
+                         <div id="search_results" class="auto_height">[ search results ]<pre></pre></div>
+                         <input type="hidden" name="form_data" id="form_data" value="">
+                    </form>
+               </div>
+          </div>
+     </body>
+</html>
