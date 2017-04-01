@@ -1,12 +1,12 @@
 # xml-editor
-UI for editing XML.
+UI for editing XML.<br>
 
-Originally designed to go 2 levels deep in a specific data structure.
+Originally designed to go 2 levels deep in a specific data structure.<br>
 
-Planned Features:
-Import and Export XML (string or file)
-Search values in any attribute
-Edit existing values
-Add or remove attributes
-Multisort
-De-dupe
+Planned Features:<br>
+Import and Export XML (string or file)<br>
+Search values in any attribute<br>
+Edit existing values<br>
+Add or remove attributes<br>
+Multisort<br>
+De-dupe<br>
